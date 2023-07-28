@@ -1,35 +1,45 @@
 # About
 
-This is a basic project made in solidity for sending and recieving ETH. The minimum amount is set to $5 in ETH. 
-
-# Table of Contents
-
+This is a basic project made in solidity for crowd funding. 
 
 
 # Getting Started
 
-## Installation
+## Requirements
 
-Explain how to install or set up your project. Provide step-by-step instructions or commands that users can follow to get your project up and running on their local machine.
+Following are the pre-requisites.
+
+| Requirement | Description                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| git         | Check git version by using ```git --version``` or install from [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) |
+| Foundry     | Check foundry version by using ```forge --version``` or install from [here](https://getfoundry.sh)                                   |
 
 ## Quickstart
 
-| Requirement | Description                                                                                    |
-| ----------- | ---------------------------------------------------------------------------------------------- |
-| git         | List all new or modified files                                                                 |
-| Foundry     | Check foundry version by using 'forge --version' or install from [here](https://getfoundry.sh) |
-
-# Usage
-
-Describe how to use your project. Provide examples and explanations of how to interact with your project's features. Include code snippets if necessary.
+```
+git clone https://github.com/AbhiSharma1210/Foundry-FundMe
+cd Foundry-FundMe
+forge build
+```
 
 ## Features
 
-List the main features of your project. Highlight what makes your project unique or different from others.
+List the main features.
+1. Gets current price feed to convert minimum amount into ETH.
+2. Sender needs to send atleast $5 for a successfull transaction.
+3. Only the owner of the smart contract can withdraw. 
 
-## Contributing
+# Testing
 
-Explain how other developers can contribute to your project. Provide guidelines for submitting pull requests, reporting issues, and any other contribution-related information.
+Following tests are covered.
+1. Unit test.
+2. Integration test.
+3. Forked test.
+
+We can directly run 
+```
+forge test
+```
 
 ## License
 
