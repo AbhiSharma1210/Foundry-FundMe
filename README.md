@@ -61,27 +61,28 @@ forge coverage
 
 # Deploying to a testnet/Mainnet
 
-# 1.Setup environment variable
+## 1.Setup environment variable
 You'll want to set your ```SEPOLIA_RPC_URL``` and ```PRIVATE_KEY``` as environment variables. You can add them to a ```.env``` file.
 
 * ```PRIVATE_KEY```: The private key of your account(only use test account.)
 * ```SEPOLIA_RPC_URL```: You can setup an [Alchemy](https://www.alchemy.com) account to get the URL of the Sepolia testnet node.
 * Optional - You can add your ```EHTERSCAN_API_KEY``` if you want to verify the contract on [Etherscan](https://etherscan.io).
 
-# 2.Get testnet ETH
-You can get some testnet ETH from [faucets.chain.lin](https://faucets.chain.link) to add to your Metamask test account.
+## 2.Get testnet ETH
+You can get some testnet ETH from [faucets.chain.link](https://faucets.chain.link) to add to your Metamask test account.
 
-# 3.Deploy
+## 3.Deploy
 
 ```
 forge script script/DeployFundMe.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast -- verify --etherscan-api-key $ETHERSCAN_API_KEY
 ```
 
-# 4.Scripts
+## 4.Scripts
 After deployment to a testnet/local net. You can run the scripts.
 
 Using ```cast``` deployed locally:
 ```
 cast send <FUNDME_CONTRACT_ADDRESS> "fund()" --value 0.1ether --private-key <PRIVATE_KEY>
 ```
+
 
