@@ -1,6 +1,6 @@
 # About
 
-This is a basic project made in solidity for crowd funding. 
+This is a crowd funding App made in solidity. 
 
 
 # Getting Started
@@ -27,7 +27,8 @@ forge build
 List the main features.
 1. Gets current price feed to convert minimum amount into ETH.
 2. Sender needs to send atleast $5 for a successfull transaction.
-3. Only the owner of the smart contract can withdraw. 
+3. Only the owner of the smart contract can withdraw.
+4. Can be deployed on any chain.
 
 # Testing
 
