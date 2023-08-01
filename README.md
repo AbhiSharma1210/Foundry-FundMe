@@ -44,9 +44,9 @@ forge test
 or, If you want to only run test functions matching the specified regex pattern.
 
 ```
-"forge test -m testFunctionName" is deprecated. Please use 
+"forge test -m testFunctionName" is deprecated. Please use
 
-forge test --match-test testFunctionName
+forge test --mt testFunctionName
 ```
 or
 ```
